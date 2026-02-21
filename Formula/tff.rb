@@ -5,21 +5,21 @@
 class Tff < Formula
   desc "Command-line interface for the FeedFactory API"
   homepage "https://github.com/TheFeedFactory/tff-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.1.0/tff-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9ee42b7ddf60ebe1fdd938acbdca366b65ee1cbdd3617be2bffa6e7d6ae79325"
+      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.2.0/tff-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "054ca105d289eeeb53aba423fea861ed7f4d10a95f89de9e694e51880d4a940f"
 
       def install
         bin.install "tff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.1.0/tff-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "56c55f97622b24daa797ef5d35d0a155314d2f5dd1975f9498509f71b2b03696"
+      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.2.0/tff-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "4c388d5ffaac4695fd3f1842875e2cc11bf8ae12243554c0437d76825bd1d022"
 
       def install
         bin.install "tff"
@@ -29,15 +29,15 @@ class Tff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.1.0/tff-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "d69a0a8d22a4db41c567d6211451a264e342d9420a3c66271b5b6f153574b973"
+      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.2.0/tff-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "a7eeefcc360640c1d5bdb90e4dbfb1002381051d99da2f2a9bab9259bee449f7"
       def install
         bin.install "tff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.1.0/tff-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "40558bf355b0a83fcad82133698653dcb38176dbbeb63b8f1ccb89db853e12ff"
+      url "https://github.com/TheFeedFactory/tff-cli/releases/download/v0.2.0/tff-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "0cb30b3ff7d32c20c991251b51075a5bd6ba5d5d0d7f5e5a6f844336ee40d3f3"
       def install
         bin.install "tff"
       end
